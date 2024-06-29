@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"1UyT58tvwn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Linx</span>\",\"col\":12}}]",
+ "content": "[{\"id\":\"1UyT58tvwn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Linx</span>\",\"col\":12}},{\"id\":\"TrnDzFReBG\",\"type\":\"card\",\"data\":{\"card_name\":\"Data Collection\",\"col\":4}},{\"id\":\"2911jkH58K\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"bHRmeUL9Rp\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Nested Data Sets</b></span>\",\"col\":12}},{\"id\":\"QNys7W2LBJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Chain\",\"col\":3}}]",
  "creation": "2024-06-26 20:39:39.775576",
  "custom_blocks": [],
  "docstatus": 0,
@@ -12,8 +12,48 @@
  "indicator_color": "orange",
  "is_hidden": 0,
  "label": "Linx",
- "links": [],
- "modified": "2024-06-26 20:44:36.305608",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Data Collection",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Collector",
+   "link_count": 0,
+   "link_to": "collector",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "API-Endpunkt",
+   "link_count": 0,
+   "link_to": "API Endpoint",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "API Provider",
+   "link_count": 0,
+   "link_to": "API Provider",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-06-29 13:53:40.148822",
  "modified_by": "Administrator",
  "module": "Linx",
  "name": "Linx",
@@ -24,6 +64,16 @@
  "quick_lists": [],
  "roles": [],
  "sequence_id": 2.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Chain",
+   "link_to": "Chain",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
  "title": "Linx"
 }

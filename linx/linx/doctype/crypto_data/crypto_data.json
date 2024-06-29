@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "autoname": "format:SYMBOL-{chain}-{currency}",
+ "creation": "2024-06-29 06:05:19.690038",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "currency",
+  "chain",
+  "details"
+ ],
+ "fields": [
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "chain",
+   "fieldtype": "Data",
+   "label": "Chain"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Text",
+   "label": "Details"
+  }
+ ],
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2024-06-29 07:07:10.026403",
+ "modified_by": "Administrator",
+ "module": "Linx",
+ "name": "Crypto Data",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

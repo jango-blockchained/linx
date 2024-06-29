@@ -4,7 +4,7 @@ app_publisher = "jango_blockchained"
 app_description = "A hyperlink management system"
 app_email = "info@cryptolinx.de"
 app_license = "mit"
-# required_apps = []
+required_apps = ['frappe_telegram']
 
 # Includes in <head>
 # ------------------
@@ -127,8 +127,16 @@ app_license = "mit"
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
-# 	}
+# 	}s
 # }
+
+# doc_events = {
+#     "*": {
+#         "before_insert": "linx.linx.doctype.cryptocurrency.cryptocurrency.get_cryptocurrency"
+#     }
+# }
+
+
 
 # Scheduled Tasks
 # ---------------

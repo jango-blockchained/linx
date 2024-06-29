@@ -1,0 +1,219 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:CHAIN-{###}",
+ "creation": "2024-06-27 04:57:08.901058",
+ "default_view": "Tree",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "group_section",
+  "is_group",
+  "naming_section",
+  "network_name",
+  "chain_id",
+  "column_break_naming",
+  "type",
+  "0x_id",
+  "urls_section",
+  "rpc_url",
+  "column_break_azxy",
+  "block_explorer_url",
+  "layer_tab",
+  "layer_section",
+  "layer",
+  "column_break_layer",
+  "parent_chain",
+  "tab_break_bsoi",
+  "nested_set_section",
+  "old_parent",
+  "column_break_saec",
+  "lft",
+  "column_break_nztx",
+  "rgt"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "network_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Network name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "rpc_url",
+   "fieldtype": "Data",
+   "label": "RPC URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "column_break_azxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "block_explorer_url",
+   "fieldtype": "Data",
+   "label": "Block Explorer URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "layer_section",
+   "fieldtype": "Section Break",
+   "label": "Layer"
+  },
+  {
+   "default": "1",
+   "fieldname": "layer",
+   "fieldtype": "Int",
+   "label": "Layer"
+  },
+  {
+   "fieldname": "parent_chain",
+   "fieldtype": "Link",
+   "label": "Parent Chain",
+   "options": "Chain"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Chain"
+  },
+  {
+   "fieldname": "parent_chain",
+   "fieldtype": "Link",
+   "label": "Parent Chain",
+   "options": "Chain"
+  },
+  {
+   "fieldname": "group_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_section",
+   "fieldtype": "Section Break",
+   "label": "Naming"
+  },
+  {
+   "fieldname": "column_break_naming",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "urls_section",
+   "fieldtype": "Section Break",
+   "label": "URLs"
+  },
+  {
+   "fieldname": "column_break_layer",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "Mainnet",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Type",
+   "options": "Mainnet\nTestnet\nDevnet"
+  },
+  {
+   "default": "-1",
+   "fieldname": "chain_id",
+   "fieldtype": "Int",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Chain ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "0x_id",
+   "fieldtype": "Data",
+   "label": "0x ID"
+  },
+  {
+   "fieldname": "layer_tab",
+   "fieldtype": "Tab Break",
+   "label": "Layer"
+  },
+  {
+   "fieldname": "tab_break_bsoi",
+   "fieldtype": "Tab Break",
+   "label": "Nested Set"
+  },
+  {
+   "fieldname": "nested_set_section",
+   "fieldtype": "Section Break",
+   "label": "References"
+  },
+  {
+   "fieldname": "column_break_saec",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nztx",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-06-28 22:46:16.282395",
+ "modified_by": "Administrator",
+ "module": "Linx",
+ "name": "Chain",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_chain",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "network_name"
+}
