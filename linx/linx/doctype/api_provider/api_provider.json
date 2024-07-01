@@ -13,7 +13,7 @@
   "column_break_fsod",
   "logo",
   "section_break_rzph",
-  "domains"
+  "endpoints"
  ],
  "fields": [
   {
@@ -42,21 +42,21 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "domains",
-   "fieldtype": "Table",
-   "label": "Domains",
-   "options": "API Provider Endpoint Table"
-  },
-  {
    "fieldname": "logo",
    "fieldtype": "Attach Image",
    "label": "Logo"
+  },
+  {
+   "fieldname": "endpoints",
+   "fieldtype": "Table",
+   "label": "Endpoints",
+   "options": "API Provider Endpoint Table"
   }
  ],
  "image_field": "logo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-29 14:01:30.077522",
+ "modified": "2024-06-30 00:15:56.076075",
  "modified_by": "Administrator",
  "module": "Linx",
  "name": "API Provider",

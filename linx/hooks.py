@@ -4,7 +4,7 @@ app_publisher = "jango_blockchained"
 app_description = "A hyperlink management system"
 app_email = "info@cryptolinx.de"
 app_license = "mit"
-required_apps = ['frappe_telegram']
+#required_apps = []
 
 # Includes in <head>
 # ------------------

@@ -5,18 +5,43 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_gob1"
+  "provider",
+  "endpoint",
+  "enabled"
  ],
  "fields": [
   {
-   "fieldname": "section_break_gob1",
-   "fieldtype": "Section Break"
+   "fieldname": "provider",
+   "fieldtype": "Data",
+   "label": "Provider"
+  },
+  {
+   "fieldname": "endpoint",
+   "fieldtype": "Data",
+   "label": "Endpoint"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_virtual": 1,
- "links": [],
- "modified": "2024-06-29 23:07:44.288163",
+ "links": [
+  {
+   "link_doctype": "API Provider",
+   "link_fieldname": "provider_name",
+   "table_fieldname": "provider"
+  },
+  {
+   "link_doctype": "API Provider Endpoint Table",
+   "link_fieldname": "endpoint",
+   "table_fieldname": "endpoint"
+  }
+ ],
+ "modified": "2024-06-30 00:28:27.335932",
  "modified_by": "Administrator",
  "module": "Linx",
  "name": "API Endpoint",
