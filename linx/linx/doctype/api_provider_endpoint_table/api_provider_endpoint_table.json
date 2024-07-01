@@ -6,8 +6,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "enabled",
-  "endpoint"
+  "endpoint",
+  "enabled"
  ],
  "fields": [
   {
@@ -20,6 +20,7 @@
    "fieldname": "endpoint",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_preview": 1,
    "label": "Endpoint",
    "reqd": 1
   }
@@ -27,7 +28,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-01 02:23:21.058786",
+ "modified": "2024-07-01 14:03:11.707194",
  "modified_by": "Administrator",
  "module": "Linx",
  "name": "API Provider Endpoint Table",

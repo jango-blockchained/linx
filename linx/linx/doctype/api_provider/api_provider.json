@@ -9,9 +9,10 @@
  "engine": "InnoDB",
  "field_order": [
   "provider_name",
-  "website",
-  "column_break_fsod",
   "logo",
+  "column_break_fsod",
+  "website",
+  "api_root",
   "section_break_rzph",
   "endpoints"
  ],
@@ -51,12 +52,18 @@
    "fieldtype": "Table",
    "label": "Endpoints",
    "options": "API Provider Endpoint Table"
+  },
+  {
+   "fieldname": "api_root",
+   "fieldtype": "Data",
+   "label": "API Root",
+   "options": "URL"
   }
  ],
  "image_field": "logo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-30 00:15:56.076075",
+ "modified": "2024-07-01 14:07:38.816455",
  "modified_by": "Administrator",
  "module": "Linx",
  "name": "API Provider",

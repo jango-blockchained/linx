@@ -16,11 +16,11 @@ class APIEndpoint(Document):
         return {}
 
     def load_from_db(self):
-        # data = next((item for item in APIEndpoint.get_list({}) if item['name'] == self.name), None)
-        # if not data:
-        #     frappe.throw(f"Document {self.name} not found")
+        data = next((item for item in APIEndpoint.get_list({}) if item['name'] == self.name), None)
+        if not data:
+            frappe.throw(f"Document {self.name} not found")
 
-        # self.update(data)
+        self.update(data)
         pass
 
     def db_insert(self, *args, **kwargs):
