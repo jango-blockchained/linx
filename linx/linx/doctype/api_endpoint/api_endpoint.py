@@ -1,10 +1,12 @@
 import frappe
 from frappe.model.document import Document
 
+
 class APIEndpoint(Document):
+
     @staticmethod
-    def get_list(args): 
-        return frappe.get_all('API Provider Endpoint Table', fields=['name','url'])
+    def get_list(args):
+        return frappe.get_all("API Provider Endpoint Table", fields=["name", "url"])
 
     @staticmethod
     def get_count(args):
@@ -16,7 +18,10 @@ class APIEndpoint(Document):
         return {}
 
     def load_from_db(self):
-        data = next((item for item in APIEndpoint.get_list({}) if item['name'] == self.name), None)
+        data = next(
+            (item for item in APIEndpoint.get_list({}) if item["name"] == self.name),
+            None,
+        )
         if not data:
             frappe.throw(f"Document {self.name} not found")
 
@@ -25,12 +30,13 @@ class APIEndpoint(Document):
 
     def db_insert(self, *args, **kwargs):
         pass
+
     def db_update(self, *args, **kwargs):
         # frappe.throw("Update operation is not permitted for virtual doctype")
         pass
 
     def delete(self):
-        #frappe.throw("Delete operation is not permitted for virtual doctype")
+        # frappe.throw("Delete operation is not permitted for virtual doctype")
         pass
 
 
