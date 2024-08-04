@@ -1,21 +1,30 @@
 {
+ "background_color": "bg-dark-1",
  "button_gradients": 0,
  "button_rounded_corners": 1,
- "button_shadows": 0,
+ "button_shadows": 1,
  "creation": "2024-06-26 23:23:51.733455",
  "custom": 0,
- "custom_scss": "/* Variables */\n$fprimary: #263238;  // Primary dark color\n$fsecondary: #37474f; // Secondary dark color\n$ftext: #f5f5f5;       // Text color\n$faccent: #4f93ce;      // Accent color\n\n/* Base styles */\nbody {\n  background-color: $fprimary;\n  color: $ftext;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: $faccent;\n  text-decoration: none;\n\n  &:hover {\n    color: lighten($faccent, 10%);\n  }\n}\n\n.frappe-control {\n  background-color: $fsecondary;\n  border: none;\n  color: $ftext;\n  padding: 10px 15px;\n  border-radius: 4px;\n\n  &:focus {\n    outline: none;\n    background-color: darken($fsecondary, 5%);\n  }\n}\n\n.frappe-form {\n  margin: 20px;\n}\n\n.frappe-form-group {\n  margin-bottom: 15px;\n}\n\n.frappe-label {\n  color: $ftext;\n  font-weight: bold;\n  margin-bottom: 5px;\n}\n\n.frappe-button {\n  background-color: $faccent;\n  color: $fprimary;\n  border: none;\n  padding: 10px 15px;\n  border-radius: 4px;\n  cursor: pointer;\n\n  &:hover {\n    background-color: lighten($faccent, 10%);\n  }\n}\n\n/* Header */\n.frappe-header {\n  background-color: $fprimary;\n  color: $ftext;\n  padding: 10px 20px;\n  display: flex;\n  justify-content: space-between;\n}\n\n/* Sidebar */\n.frappe-sidebar {\n  background-color: $fsecondary;\n  color: $ftext;\n  padding: 10px 0;\n}\n\n.frappe-sidebar a {\n  color: $ftext;\n\n  &:hover {\n    color: $faccent;\n  }\n}\n\n/* Content Area */\n.frappe-container {\n  padding: 20px;\n}\n\n.frappe-card {\n  background-color: $fsecondary;\n  color: $ftext;\n  border-radius: 4px;\n  padding: 15px;\n  margin-bottom: 20px;\n}\n\n/* Table */\n.frappe-table {\n  color: $ftext;\n\n  th {\n    background-color: $fsecondary;\n    padding: 10px 15px;\n    border-bottom: 1px solid lighten($fsecondary, 10%);\n  }\n\n  td {\n    padding: 10px 15px;\n    border-bottom: 1px solid lighten($fsecondary, 10%);\n  }\n}\n",
+ "custom_scss": "",
  "docstatus": 0,
  "doctype": "Website Theme",
- "font_properties": "wght@300;400;500;600;700;800",
+ "font_properties": "wght@100;300;400;500;600;700;800",
+ "google_font": "Montserrat",
  "idx": 0,
- "ignored_apps": [],
- "modified": "2024-06-26 23:24:18.695130",
+ "ignored_apps": [
+  {
+   "app": "wiki"
+  }
+ ],
+ "light_color": "",
+ "modified": "2024-08-03 14:18:56.968136",
  "modified_by": "Administrator",
  "module": "Linx",
  "name": "Linx",
  "owner": "Administrator",
+ "primary_color": "pr-1",
+ "text_color": "",
  "theme": "Linx",
- "theme_scss": "$enable-shadows: false;\n$enable-gradients: false;\n$enable-rounded: true;\n\n// Bootstrap Variable Overrides\n\n\n// Import themes from installed apps\n@import \"frappe/public/scss/website.bundle\";\n\n\n\n// Custom Theme\n/* Variables */\n$fprimary: #263238;  // Primary dark color\n$fsecondary: #37474f; // Secondary dark color\n$ftext: #f5f5f5;       // Text color\n$faccent: #4f93ce;      // Accent color\n\n/* Base styles */\nbody {\n  background-color: $fprimary;\n  color: $ftext;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: $faccent;\n  text-decoration: none;\n\n  &:hover {\n    color: lighten($faccent, 10%);\n  }\n}\n\n.frappe-control {\n  background-color: $fsecondary;\n  border: none;\n  color: $ftext;\n  padding: 10px 15px;\n  border-radius: 4px;\n\n  &:focus {\n    outline: none;\n    background-color: darken($fsecondary, 5%);\n  }\n}\n\n.frappe-form {\n  margin: 20px;\n}\n\n.frappe-form-group {\n  margin-bottom: 15px;\n}\n\n.frappe-label {\n  color: $ftext;\n  font-weight: bold;\n  margin-bottom: 5px;\n}\n\n.frappe-button {\n  background-color: $faccent;\n  color: $fprimary;\n  border: none;\n  padding: 10px 15px;\n  border-radius: 4px;\n  cursor: pointer;\n\n  &:hover {\n    background-color: lighten($faccent, 10%);\n  }\n}\n\n/* Header */\n.frappe-header {\n  background-color: $fprimary;\n  color: $ftext;\n  padding: 10px 20px;\n  display: flex;\n  justify-content: space-between;\n}\n\n/* Sidebar */\n.frappe-sidebar {\n  background-color: $fsecondary;\n  color: $ftext;\n  padding: 10px 0;\n}\n\n.frappe-sidebar a {\n  color: $ftext;\n\n  &:hover {\n    color: $faccent;\n  }\n}\n\n/* Content Area */\n.frappe-container {\n  padding: 20px;\n}\n\n.frappe-card {\n  background-color: $fsecondary;\n  color: $ftext;\n  border-radius: 4px;\n  padding: 15px;\n  margin-bottom: 20px;\n}\n\n/* Table */\n.frappe-table {\n  color: $ftext;\n\n  th {\n    background-color: $fsecondary;\n    padding: 10px 15px;\n    border-bottom: 1px solid lighten($fsecondary, 10%);\n  }\n\n  td {\n    padding: 10px 15px;\n    border-bottom: 1px solid lighten($fsecondary, 10%);\n  }\n}\n\n\n:root {\n\t}\n",
+ "theme_scss": "\n@import url(\"https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap\");\n// backward compatibility. deprecated in v15\n$font-family-sans-serif: \"Montserrat\", \"InterVariable\", \"Inter\", -apple-system, BlinkMacSystemFont,\n\t\"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\",\n\t\"Droid Sans\", \"Helvetica Neue\", sans-serif;\n\n// override font stack if custom font is set in website theme\n:root {\n\t--font-stack: \"Montserrat\", \"InterVariable\", \"Inter\", -apple-system, BlinkMacSystemFont,\n\t\"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\",\n\t\"Droid Sans\", \"Helvetica Neue\", sans-serif !important;\n}\n$primary: #8e4dff;$body-bg: #f0f0f0;$enable-shadows: true;\n$enable-gradients: false;\n$enable-rounded: true;\n\n// Bootstrap Variable Overrides\n\n\n// Import themes from installed apps\n@import \"frappe/public/scss/website.bundle\";\n\n\n\n// Custom Theme\n\n\n:root {\n\t\n\t--primary: #{$primary};\n\t--primary-color: #{$primary};\n\t\n\t--bg-color: #{$body-bg};\n\t}\n",
  "theme_url": "/files/website_theme/linx_style.css"
 }
